@@ -21,7 +21,7 @@ Every scheduled run:
 ## Repo
 
 ```bash
-git clone <JOLTRA_STUDIO_REPO_URL> /opt/joltra-studio
+git clone https://github.com/bryanforhelp-star/joltra-studio /opt/joltra-studio
 cd /opt/joltra-studio
 npm install
 ```
@@ -46,7 +46,7 @@ CURSOR_API_KEY=cursor_...
 
 # VPS: use cloud agents (headless server — do NOT use local mode)
 CURSOR_AGENT_RUNTIME=cloud
-GITHUB_REPO_URL=https://github.com/YOUR_ORG/joltra-studio
+GITHUB_REPO_URL=https://github.com/bryanforhelp-star/joltra-studio
 
 # Notion — pipeline CRM
 NOTION_API_KEY=ntn_...

@@ -1,0 +1,139 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #09090b;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-brand-blue: #b8e6fa;
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --font-serif: var(--font-instrument-serif);
+}
+
+.brand-surface {
+  background-color: rgb(184 230 250 / 0.58);
+  border-color: rgb(10 10 10 / 0.14);
+  color: #0a0a0a;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+::selection {
+  background-color: #fafafa;
+  color: #02040a;
+}
+
+.hero-emphasis-stroke {
+  -webkit-text-stroke: 1px #0a0a0a;
+  paint-order: stroke fill;
+}
+
+.hero-cta-button {
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  background-color: transparent;
+}
+
+.hero-cta-button:hover {
+  border-color: #ffffff;
+  background-color: #0a0a0a;
+  color: #ffffff;
+}
+
+.hero-video {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: none;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.marquee-track {
+  animation: marquee 40s linear infinite;
+}
+
+.video-slider-track {
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+
+.video-slider-track::-webkit-scrollbar {
+  display: none;
+}
+
+@keyframes clip-progress {
+  0% {
+    width: 18%;
+  }
+  100% {
+    width: 72%;
+  }
+}
+
+.clip-progress-bar {
+  animation: clip-progress 6s ease-in-out infinite alternate;
+}
+
+.pillars-card {
+  border-color: rgb(184 230 250 / 0.72);
+  border-width: 1px;
+  transition: border-color 180ms ease;
+}
+
+.pillars-card:hover {
+  border-color: #ffffff;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .clip-progress-bar {
+    animation: none;
+    width: 40%;
+  }
+}
+
+@media (pointer: fine) {
+  html.custom-cursor,
+  html.custom-cursor * {
+    cursor: none !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track {
+    animation: none;
+  }
+
+  .hero-video {
+    display: none;
+  }
+
+  html.custom-cursor,
+  html.custom-cursor * {
+    cursor: auto !important;
+  }
+
+  html {
+    scroll-behavior: auto;
+  }
+}
+

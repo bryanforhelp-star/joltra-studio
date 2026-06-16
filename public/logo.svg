@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none" role="img" aria-label="Joltra Studio">
+  <text
+    x="100"
+    y="42"
+    text-anchor="middle"
+    fill="#fafafa"
+    font-family="ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, sans-serif"
+    font-size="18"
+    font-weight="600"
+    letter-spacing="0.38em"
+  >
+    STUDIO
+  </text>
+  <path
+    fill="#fafafa"
+    d="M142 58H78c-6 0-11 5-11 11v10c0 28 21 50 48 50 12 0 23-4 30-12v46c0 14-11 25-25 25s-25-11-25-25v-8c0-5-4-9-9-9s-9 4-9 9v22c0 28 22 50 50 50s50-22 50-50V69c0-6-5-11-11-11z"
+  />
+</svg>

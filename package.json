@@ -1,0 +1,36 @@
+{
+  "name": "joltra-studio",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "prospects:research": "tsx scripts/prospect-agent/run.ts",
+    "prospects:score": "tsx scripts/prospect-agent/score-output.ts",
+    "prospects:draft": "tsx scripts/prospect-agent/draft-output.ts",
+    "prospects:sync": "tsx scripts/prospect-agent/sync-notion.ts",
+    "pipeline:run": "tsx scripts/prospect-agent/run-pipeline.ts",
+    "pipeline:follow-ups": "tsx scripts/prospect-agent/follow-up-digest.ts"
+  },
+  "dependencies": {
+    "framer-motion": "^12.40.0",
+    "lucide-react": "^1.17.0",
+    "next": "16.2.6",
+    "react": "19.2.4",
+    "react-dom": "19.2.4"
+  },
+  "devDependencies": {
+    "@cursor/sdk": "^1.0.18",
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.2.6",
+    "tailwindcss": "^4",
+    "tsx": "^4.19.0",
+    "typescript": "^5"
+  }
+}
